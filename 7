@@ -1,0 +1,28 @@
+7.a. write a java program that illustrate  exception handling mechanism .
+importjava.lang.*;
+class Error2
+{
+public static void main(String args[])
+{
+int a=10;
+int b=5;
+int c=5;
+intx,y;
+try
+{
+ x=a/(b-c);
+}
+catch (ArithmeticException e)
+{
+System.out.println("division by zero");
+}
+ y=a/(b+c);
+System.out.println("y=" +y);
+}
+}
+Output:
+C:\javaprg>javac Error2.java
+C:\javaprg>java Error2
+Division by zero
+y=1
+
