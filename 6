@@ -1,0 +1,27 @@
+6. Write a Java program that implements interface using extends keyword
+interface A {
+   void funcA();
+}
+interface B extends A {
+   void funcB();
+}
+class C implements B {
+   public void funcA() {
+      System.out.println("This is funcA");
+   }
+   public void funcB() {
+      System.out.println("This is funcB");
+   }
+}
+public class Demo {
+   public static void main(String args[]) {
+      C obj = new C();
+      obj.funcA();
+      obj.funcB();
+   }
+}
+
+
+Output
+This is funcA
+This is funcB
